@@ -5,6 +5,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-add_lunch_combo omni_camellia-user
-add_lunch_combo omni_camellia-userdebug
-add_lunch_combo omni_camellia-eng
+export USE_CCACHE=1
+export CCACHE_COMPRESS=1
+export CCACHE_DIR=~/ccache
+export CCACHE_MAXSIZE=50G
+
